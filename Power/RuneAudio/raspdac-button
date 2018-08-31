@@ -1,0 +1,4 @@
+#!/bin/bash
+
+/usr/bin/python /var/www/command/power-mgmt.py --button
+wait

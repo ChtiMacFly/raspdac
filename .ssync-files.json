@@ -1,0 +1,15 @@
+{
+    "paths": [
+        { 
+            "local":"Power/*.*", 
+            "remote":"/home/tc"
+        }        
+    ],
+    "remote_host":"192.168.1.15",
+    "remote_user":"tc",
+    "remote_passwd":"piCore",
+    "ignore": [
+        ".git", "node_modules"
+    ],
+    "scpexec":"/usr/bin/pscp"
+}

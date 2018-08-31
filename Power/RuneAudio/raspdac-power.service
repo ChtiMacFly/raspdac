@@ -1,0 +1,10 @@
+[Unit]
+Description=RaspDAC power management
+After=systemd-modules-load.service
+
+[Service]
+Type=simple
+ExecStart=/var/www/command/raspdac-button
+
+[Install]
+WantedBy=multi-user.target

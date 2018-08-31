@@ -1,0 +1,15 @@
+{
+  "name": "raspdac",
+  "version": "1.0.0",
+  "description": "Ensemble de scripts pour Audiophonics RaspDAC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "audiophonics",
+    "raspdac"
+  ],
+  "author": "Cyril Sudre",
+  "license": "ISC"
+}
