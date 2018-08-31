@@ -1,4 +1,4 @@
 .ssync-files.json
 Led/16x2_oled_volumio.py
-Old
-node_modules
+old/
+node_modules/
