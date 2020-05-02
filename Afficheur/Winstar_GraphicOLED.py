@@ -440,7 +440,7 @@ if __name__ == '__main__':
 
   try:
 
-    print "Winstar OLED Display Test"
+    print("Winstar OLED Display Test")
     lcd = Winstar_GraphicOLED()
     lcd.oledReset()
     lcd.home()
@@ -483,4 +483,4 @@ if __name__ == '__main__':
         GPIO.cleanup()
     else:
         curses.endwin()
-    print "Winstar OLED Display Test Complete"
+    print("Winstar OLED Display Test Complete")

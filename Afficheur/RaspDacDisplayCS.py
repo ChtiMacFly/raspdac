@@ -11,7 +11,7 @@ import json
 import logging
 import os
 import sys
-import Queue
+import queue
 from threading import Thread
 
 import pylms
@@ -180,12 +180,12 @@ class RaspDac_Display():
 				self.logger.debug("Impossible de récupérer le statut depuis le serveur")
 				return { 'state':u"stop", 'artist':u"", 'title':u"", 'album':u"", 'remaining':u"", 'current':0, 'duration':0, 'position':u"", 'volume':0, 'playlist_display':u"", 'playlist_position':0, 'playlist_count':0, 'bitrate':u"", 'type':u"", 'current_time':u""}
 
-	  	if lms_status == "play":
+		if lms_status == "play":
 			import urllib
 
-			artist = urllib.unquote(str(self.lmsplayer.request("artist ?", True))).decode('utf-8')
-			title = urllib.unquote(str(self.lmsplayer.request("title ?", True))).decode('utf-8')
-			album = urllib.unquote(str(self.lmsplayer.request("album ?", True))).decode('utf-8')
+			artist = urllib.parse.unquote(str(self.lmsplayer.request("artist ?", True))).decode('utf-8')
+			title = urllib.parse.unquote(str(self.lmsplayer.request("title ?", True))).decode('utf-8')
+			album = urllib.parse.unquote(str(self.lmsplayer.request("album ?", True))).decode('utf-8')
 			playlist_position = int(self.lmsplayer.request("playlist index ?"))+1
 			playlist_count = self.lmsplayer.playlist_track_count()
 			volume = self.lmsplayer.get_volume()
@@ -195,12 +195,12 @@ class RaspDac_Display():
 
 			# Get bitrate and tracktype if they are available.  Try blocks used to prevent array out of bounds exception if values are not found
 			try:
-				bitrate = urllib.unquote(str(self.lmsplayer.request("songinfo 2 1 url:"+url+" tags:r", True))).decode('utf-8').split("bitrate:", 1)[1]
+				bitrate = urllib.parse.unquote(str(self.lmsplayer.request("songinfo 2 1 url:"+url+" tags:r", True))).decode('utf-8').split("bitrate:", 1)[1]
 			except:
 				bitrate = u""
 
 			try:
-				tracktype = urllib.unquote(str(self.lmsplayer.request("songinfo 2 1 url:"+url+" tags:o", True))).decode('utf-8').split("type:",1)[1]
+				tracktype = urllib.parse.unquote(str(self.lmsplayer.request("songinfo 2 1 url:"+url+" tags:o", True))).decode('utf-8').split("type:",1)[1]
 			except:
 				tracktype = u""
 
@@ -247,7 +247,7 @@ class RaspDac_Display():
 				remaining = timepos
 
 			return { 'state':u"play", 'artist':artist, 'title':title, 'album':album, 'remaining':remaining, 'current':current, 'duration':duration, 'position':timepos, 'volume':volume, 'playlist_display':playlist_display,'playlist_position':playlist_position, 'playlist_count':playlist_count, 'bitrate':bitrate, 'type':tracktype }
-	  	else:
+		else:
 			return { 'state':u"stop", 'artist':u"", 'title':u"", 'album':u"", 'remaining':u"", 'current':0, 'duration':0, 'position':u"", 'volume':0, 'playlist_display':u"", 'playlist_position':0, 'playlist_count':0, 'bitrate':u"", 'type':u""}
 
 	def getCurrentTime(self):
@@ -271,7 +271,7 @@ class RaspDac_Display():
 	# la file d'attente.
 	def start(self):
 		# File d'attente pour l'affichage
-		self.dq = Queue.Queue()
+		self.dq = queue.Queue()
 		
 		# Thread qui gère l'affichage à partir de la file d'attente
 		dm = Thread(target=self.display)
@@ -369,7 +369,8 @@ class RaspDac_Display():
 					parms = []
 					for j in range(len(current_line['variables'])):
 						try:
-							if type(cstatus[current_line['variables'][j]]) is unicode:
+							# if type(cstatus[current_line['variables'][j]]) is unicode:
+							if type(cstatus[current_line['variables'][j]]) is str:
 								parms.append(cstatus[current_line['variables'][j]].encode('utf-8'))
 							else:
 								parms.append(cstatus[current_line['variables'][j]])
@@ -540,7 +541,7 @@ class RaspDac_Display():
 					self.dq.task_done()
 
 				prev_time = time.time()
-			except Queue.Empty:
+			except queue.Empty:
 				prev_time = time.time()
 				pass
 
@@ -653,18 +654,18 @@ def main(argv):
 	try:
 		opts, args = getopt.getopt(argv,"hs:p:",["server=","player="])
 	except getopt.GetoptError:
-		print 'RaspDacDisplayCS.py -s <serveur LMS> -p <player>'
+		print('RaspDacDisplayCS.py -s <serveur LMS> -p <player>')
 		sys.exit(2)
 	for opt, arg in opts:
 		if opt == '-h':
-			print 'RaspDacDisplayCS.py -s <serveur LMS> -p <player pour lequel il faut récupérer les infos>'
+			print('RaspDacDisplayCS.py -s <serveur LMS> -p <player pour lequel il faut récupérer les infos>')
 			sys.exit()
 		elif opt in ("-s", "--server"):
 			server = arg
-			print 'Adresse serveur LMS : ', server
+			print('Adresse serveur LMS : ', server)
 		elif opt in ("-p", "--player"):
 			player = arg
-			print 'Adresse player : ', player
+			print('Adresse player : ', player)
 	
 	logger.debug("Paramètres ligne de commande : %s", opts)
 
