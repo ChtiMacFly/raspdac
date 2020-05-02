@@ -4,9 +4,15 @@ Ces scripts sont conçus pour être utilisés avec le [RaspDAC Audiophonics I-Sa
 
 Voir les [différentes générations du DAC](https://www.audiophonics.fr/fr/blog-diy-audio/19-audiophonics-i-sabre-dac-les-differentes-generations-du-dac-pour-raspberry-pi.html) sur le blog AudioPhonics.
 
-## Utilisation de piCorePlayer
+## Versions utilisées
 
-_Les commandes ci-dessous sont à taper en ligne de commande une fois connecté en ssh sur le RaspDAC (via putty par exemple)_
+J'i utilisé l'image de la version standard du 7 mars 2020 (pCP6.0.0 Standard Version) disponible sur [https://www.picoreplayer.org/main_downloads.shtml](https://www.picoreplayer.org/main_downloads.shtml)
+
+Une fois installée, les version indiquées sur l'interface sont les suivantes :
+
+* piCorePlayer v6.0.0
+* piCore v10.3pCP
+* Squeezelite v1.9.6-1206-pCP
 
 ### Installation de piCorePlayer
 
@@ -26,6 +32,10 @@ Aucune difficulté ici, il suffit de suivre les instructions. Récapitulatif "à
 Changer le nom du host : RaspDacPlayer
 
 Tweaks : auto start LMS "randomplay tracks"
+
+## Utilisation de piCorePlayer
+
+_Les commandes ci-dessous sont à taper en ligne de commande une fois connecté en ssh sur le RaspDAC (via putty par exemple)_
 
 ### Ajout(s) dans cmdline
 
