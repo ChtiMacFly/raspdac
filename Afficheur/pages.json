@@ -1,0 +1,105 @@
+{
+    "play": [
+        {
+            "name": "Artist",
+            "duration": 8,
+            "lines": [
+                {
+                    "variables": [
+                        "artist"
+                    ],
+                    "format": "{0}"
+                },
+                {
+                    "variables": [
+                        "playlist_display",
+                        "position"
+                    ],
+                    "format": "{0} {1}"
+                }
+            ]
+        },
+        {
+            "name": "Blank",
+            "duration": 0.25,
+            "lines": [
+                {},
+                {
+                    "variables": [
+                        "playlist_display",
+                        "position"
+                    ],
+                    "format": "{0} {1}"
+                }
+            ]
+        },
+        {
+            "name": "Album",
+            "duration": 8,
+            "lines": [
+                {
+                    "variables": [
+                        "album"
+                    ],
+                    "format": "{0}"
+                },
+                {
+                    "variables": [
+                        "playlist_display",
+                        "position"
+                    ],
+                    "format": "{0} {1}"
+                }
+            ]
+        },
+        {
+            "name": "Blank",
+            "duration": 0.25,
+            "lines": [
+                {},
+                {
+                    "name": "bottom",
+                    "variables": [
+                        "playlist_display",
+                        "position"
+                    ],
+                    "format": "{0} {1}"
+                }
+            ]
+        },
+        {
+            "name": "Title",
+            "duration": 10,
+            "lines": [
+                {
+                    "name": "top",
+                    "variables": [
+                        "title"
+                    ],
+                    "format": "{0}"
+                },
+                {
+                    "variables": [
+                        "playlist_display",
+                        "position"
+                    ],
+                    "format": "{0} {1}"
+                }
+            ]
+        },
+        {
+            "name": "Blank",
+            "duration": 0.25,
+            "lines": [
+                {},
+                {
+                    "variables": [
+                        "playlist_display",
+                        "position"
+                    ],
+                    "format": "{0} {1}"
+                }
+            ]
+        }
+    ]
+}

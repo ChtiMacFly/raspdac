@@ -1,0 +1,261 @@
+2018-11-04 10:05:05,755 - __main__ (707) - DEBUG: Début du programme
+2018-11-04 10:05:05,755 - __main__ (651) - INFO: Récupération des paramètres de la ligne de commande
+2018-11-04 10:05:05,755 - __main__ (669) - DEBUG: Paramètres ligne de commande : []
+2018-11-04 10:05:05,755 - __main__ (559) - DEBUG: Adresse IP locale : 192.168.1.46
+2018-11-04 10:05:05,767 - __main__ (566) - DEBUG: Adresse MAC locale : B0:C0:90:69:87:71
+2018-11-04 10:05:05,768 - __main__ (111) - INFO: Initialisation avec les paramètres : B0:C0:90:69:87:71,192.168.1.46,9090,,
+2018-11-04 10:05:05,768 - __main__ (132) - INFO: Recherche du player B0:C0:90:69:87:71 sur le serveur LMS
+2018-11-04 10:05:05,768 - __main__ (154) - DEBUG: La connexion au serveur LMS a échoué lors de la recherche du player
+2018-11-04 10:05:05,768 - __main__ (280) - DEBUG: Démarrage du Thread d'affichage...
+2018-11-04 10:05:05,768 - __main__ (460) - DEBUG: Affichage avec Curses
+2018-11-04 10:05:05,770 - __main__ (180) - DEBUG: Impossible de récupérer le statut depuis le serveur
+2018-11-04 10:05:05,770 - __main__ (298) - DEBUG: Statut LMS : {'volume': 0, 'playlist_display': u'', 'duration': 0, 'bitrate': u'', 'album': u'', 'current_time': '10:05', 'artist': u'', 'playlist_count': 0, 'title': u'', 'current': 0, 'playlist_position': 0, 'state': u'stop', 'position': u'', 'type': u'', 'remaining': u''}
+2018-11-04 10:05:05,770 - __main__ (303) - DEBUG: Etat du player : stop
+2018-11-04 10:05:05,773 - __main__ (381) - DEBUG: Chaîne ligne 0 : []
+2018-11-04 10:05:05,773 - __main__ (381) - DEBUG: Chaîne ligne 1 : ['04/11/2018 10:05']
+2018-11-04 10:05:06,024 - __main__ (180) - DEBUG: Impossible de récupérer le statut depuis le serveur
+2018-11-04 10:05:06,024 - __main__ (298) - DEBUG: Statut LMS : {'volume': 0, 'playlist_display': u'', 'duration': 0, 'bitrate': u'', 'album': u'', 'current_time': '10:05', 'artist': u'', 'playlist_count': 0, 'title': u'', 'current': 0, 'playlist_position': 0, 'state': u'stop', 'position': u'', 'type': u'', 'remaining': u''}
+2018-11-04 10:05:06,025 - __main__ (303) - DEBUG: Etat du player : stop
+2018-11-04 10:05:06,025 - __main__ (381) - DEBUG: Chaîne ligne 0 : []
+2018-11-04 10:05:06,025 - __main__ (381) - DEBUG: Chaîne ligne 1 : ['04/11/2018 10:05']
+2018-11-04 10:05:06,276 - __main__ (180) - DEBUG: Impossible de récupérer le statut depuis le serveur
+2018-11-04 10:05:06,277 - __main__ (298) - DEBUG: Statut LMS : {'volume': 0, 'playlist_display': u'', 'duration': 0, 'bitrate': u'', 'album': u'', 'current_time': '10:05', 'artist': u'', 'playlist_count': 0, 'title': u'', 'current': 0, 'playlist_position': 0, 'state': u'stop', 'position': u'', 'type': u'', 'remaining': u''}
+2018-11-04 10:05:06,277 - __main__ (303) - DEBUG: Etat du player : stop
+2018-11-04 10:05:06,277 - __main__ (381) - DEBUG: Chaîne ligne 0 : []
+2018-11-04 10:05:06,278 - __main__ (381) - DEBUG: Chaîne ligne 1 : ['04/11/2018 10:05']
+2018-11-04 10:05:06,529 - __main__ (180) - DEBUG: Impossible de récupérer le statut depuis le serveur
+2018-11-04 10:05:06,529 - __main__ (298) - DEBUG: Statut LMS : {'volume': 0, 'playlist_display': u'', 'duration': 0, 'bitrate': u'', 'album': u'', 'current_time': '10:05', 'artist': u'', 'playlist_count': 0, 'title': u'', 'current': 0, 'playlist_position': 0, 'state': u'stop', 'position': u'', 'type': u'', 'remaining': u''}
+2018-11-04 10:05:06,529 - __main__ (303) - DEBUG: Etat du player : stop
+2018-11-04 10:05:06,530 - __main__ (381) - DEBUG: Chaîne ligne 0 : []
+2018-11-04 10:05:06,530 - __main__ (381) - DEBUG: Chaîne ligne 1 : ['04/11/2018 10:05']
+2018-11-04 10:05:06,781 - __main__ (180) - DEBUG: Impossible de récupérer le statut depuis le serveur
+2018-11-04 10:05:06,781 - __main__ (298) - DEBUG: Statut LMS : {'volume': 0, 'playlist_display': u'', 'duration': 0, 'bitrate': u'', 'album': u'', 'current_time': '10:05', 'artist': u'', 'playlist_count': 0, 'title': u'', 'current': 0, 'playlist_position': 0, 'state': u'stop', 'position': u'', 'type': u'', 'remaining': u''}
+2018-11-04 10:05:06,782 - __main__ (303) - DEBUG: Etat du player : stop
+2018-11-04 10:05:06,782 - __main__ (381) - DEBUG: Chaîne ligne 0 : []
+2018-11-04 10:05:06,782 - __main__ (381) - DEBUG: Chaîne ligne 1 : ['04/11/2018 10:05']
+2018-11-04 10:05:07,033 - __main__ (180) - DEBUG: Impossible de récupérer le statut depuis le serveur
+2018-11-04 10:05:07,034 - __main__ (298) - DEBUG: Statut LMS : {'volume': 0, 'playlist_display': u'', 'duration': 0, 'bitrate': u'', 'album': u'', 'current_time': '10:05', 'artist': u'', 'playlist_count': 0, 'title': u'', 'current': 0, 'playlist_position': 0, 'state': u'stop', 'position': u'', 'type': u'', 'remaining': u''}
+2018-11-04 10:05:07,034 - __main__ (303) - DEBUG: Etat du player : stop
+2018-11-04 10:05:07,035 - __main__ (381) - DEBUG: Chaîne ligne 0 : []
+2018-11-04 10:05:07,035 - __main__ (381) - DEBUG: Chaîne ligne 1 : ['04/11/2018 10:05']
+2018-11-04 10:05:07,286 - __main__ (180) - DEBUG: Impossible de récupérer le statut depuis le serveur
+2018-11-04 10:05:07,286 - __main__ (298) - DEBUG: Statut LMS : {'volume': 0, 'playlist_display': u'', 'duration': 0, 'bitrate': u'', 'album': u'', 'current_time': '10:05', 'artist': u'', 'playlist_count': 0, 'title': u'', 'current': 0, 'playlist_position': 0, 'state': u'stop', 'position': u'', 'type': u'', 'remaining': u''}
+2018-11-04 10:05:07,287 - __main__ (303) - DEBUG: Etat du player : stop
+2018-11-04 10:05:07,287 - __main__ (381) - DEBUG: Chaîne ligne 0 : []
+2018-11-04 10:05:07,287 - __main__ (381) - DEBUG: Chaîne ligne 1 : ['04/11/2018 10:05']
+2018-11-04 10:05:07,538 - __main__ (180) - DEBUG: Impossible de récupérer le statut depuis le serveur
+2018-11-04 10:05:07,538 - __main__ (298) - DEBUG: Statut LMS : {'volume': 0, 'playlist_display': u'', 'duration': 0, 'bitrate': u'', 'album': u'', 'current_time': '10:05', 'artist': u'', 'playlist_count': 0, 'title': u'', 'current': 0, 'playlist_position': 0, 'state': u'stop', 'position': u'', 'type': u'', 'remaining': u''}
+2018-11-04 10:05:07,539 - __main__ (303) - DEBUG: Etat du player : stop
+2018-11-04 10:05:07,539 - __main__ (381) - DEBUG: Chaîne ligne 0 : []
+2018-11-04 10:05:07,539 - __main__ (381) - DEBUG: Chaîne ligne 1 : ['04/11/2018 10:05']
+2018-11-04 10:05:07,790 - __main__ (180) - DEBUG: Impossible de récupérer le statut depuis le serveur
+2018-11-04 10:05:07,790 - __main__ (298) - DEBUG: Statut LMS : {'volume': 0, 'playlist_display': u'', 'duration': 0, 'bitrate': u'', 'album': u'', 'current_time': '10:05', 'artist': u'', 'playlist_count': 0, 'title': u'', 'current': 0, 'playlist_position': 0, 'state': u'stop', 'position': u'', 'type': u'', 'remaining': u''}
+2018-11-04 10:05:07,790 - __main__ (303) - DEBUG: Etat du player : stop
+2018-11-04 10:05:07,790 - __main__ (381) - DEBUG: Chaîne ligne 0 : []
+2018-11-04 10:05:07,790 - __main__ (381) - DEBUG: Chaîne ligne 1 : ['04/11/2018 10:05']
+2018-11-04 10:05:08,041 - __main__ (180) - DEBUG: Impossible de récupérer le statut depuis le serveur
+2018-11-04 10:05:08,042 - __main__ (298) - DEBUG: Statut LMS : {'volume': 0, 'playlist_display': u'', 'duration': 0, 'bitrate': u'', 'album': u'', 'current_time': '10:05', 'artist': u'', 'playlist_count': 0, 'title': u'', 'current': 0, 'playlist_position': 0, 'state': u'stop', 'position': u'', 'type': u'', 'remaining': u''}
+2018-11-04 10:05:08,042 - __main__ (303) - DEBUG: Etat du player : stop
+2018-11-04 10:05:08,042 - __main__ (381) - DEBUG: Chaîne ligne 0 : []
+2018-11-04 10:05:08,042 - __main__ (381) - DEBUG: Chaîne ligne 1 : ['04/11/2018 10:05']
+2018-11-04 10:05:08,293 - __main__ (180) - DEBUG: Impossible de récupérer le statut depuis le serveur
+2018-11-04 10:05:08,294 - __main__ (298) - DEBUG: Statut LMS : {'volume': 0, 'playlist_display': u'', 'duration': 0, 'bitrate': u'', 'album': u'', 'current_time': '10:05', 'artist': u'', 'playlist_count': 0, 'title': u'', 'current': 0, 'playlist_position': 0, 'state': u'stop', 'position': u'', 'type': u'', 'remaining': u''}
+2018-11-04 10:05:08,294 - __main__ (303) - DEBUG: Etat du player : stop
+2018-11-04 10:05:08,294 - __main__ (381) - DEBUG: Chaîne ligne 0 : []
+2018-11-04 10:05:08,295 - __main__ (381) - DEBUG: Chaîne ligne 1 : ['04/11/2018 10:05']
+2018-11-04 10:05:08,545 - __main__ (180) - DEBUG: Impossible de récupérer le statut depuis le serveur
+2018-11-04 10:05:08,546 - __main__ (298) - DEBUG: Statut LMS : {'volume': 0, 'playlist_display': u'', 'duration': 0, 'bitrate': u'', 'album': u'', 'current_time': '10:05', 'artist': u'', 'playlist_count': 0, 'title': u'', 'current': 0, 'playlist_position': 0, 'state': u'stop', 'position': u'', 'type': u'', 'remaining': u''}
+2018-11-04 10:05:08,546 - __main__ (303) - DEBUG: Etat du player : stop
+2018-11-04 10:05:08,546 - __main__ (381) - DEBUG: Chaîne ligne 0 : []
+2018-11-04 10:05:08,546 - __main__ (381) - DEBUG: Chaîne ligne 1 : ['04/11/2018 10:05']
+2018-11-04 10:05:08,797 - __main__ (180) - DEBUG: Impossible de récupérer le statut depuis le serveur
+2018-11-04 10:05:08,797 - __main__ (298) - DEBUG: Statut LMS : {'volume': 0, 'playlist_display': u'', 'duration': 0, 'bitrate': u'', 'album': u'', 'current_time': '10:05', 'artist': u'', 'playlist_count': 0, 'title': u'', 'current': 0, 'playlist_position': 0, 'state': u'stop', 'position': u'', 'type': u'', 'remaining': u''}
+2018-11-04 10:05:08,798 - __main__ (303) - DEBUG: Etat du player : stop
+2018-11-04 10:05:08,798 - __main__ (381) - DEBUG: Chaîne ligne 0 : []
+2018-11-04 10:05:08,799 - __main__ (381) - DEBUG: Chaîne ligne 1 : ['04/11/2018 10:05']
+2018-11-04 10:05:09,049 - __main__ (180) - DEBUG: Impossible de récupérer le statut depuis le serveur
+2018-11-04 10:05:09,050 - __main__ (298) - DEBUG: Statut LMS : {'volume': 0, 'playlist_display': u'', 'duration': 0, 'bitrate': u'', 'album': u'', 'current_time': '10:05', 'artist': u'', 'playlist_count': 0, 'title': u'', 'current': 0, 'playlist_position': 0, 'state': u'stop', 'position': u'', 'type': u'', 'remaining': u''}
+2018-11-04 10:05:09,050 - __main__ (303) - DEBUG: Etat du player : stop
+2018-11-04 10:05:09,050 - __main__ (381) - DEBUG: Chaîne ligne 0 : []
+2018-11-04 10:05:09,050 - __main__ (381) - DEBUG: Chaîne ligne 1 : ['04/11/2018 10:05']
+2018-11-04 10:05:09,301 - __main__ (180) - DEBUG: Impossible de récupérer le statut depuis le serveur
+2018-11-04 10:05:09,301 - __main__ (298) - DEBUG: Statut LMS : {'volume': 0, 'playlist_display': u'', 'duration': 0, 'bitrate': u'', 'album': u'', 'current_time': '10:05', 'artist': u'', 'playlist_count': 0, 'title': u'', 'current': 0, 'playlist_position': 0, 'state': u'stop', 'position': u'', 'type': u'', 'remaining': u''}
+2018-11-04 10:05:09,301 - __main__ (303) - DEBUG: Etat du player : stop
+2018-11-04 10:05:09,302 - __main__ (381) - DEBUG: Chaîne ligne 0 : []
+2018-11-04 10:05:09,302 - __main__ (381) - DEBUG: Chaîne ligne 1 : ['04/11/2018 10:05']
+2018-11-04 10:05:09,553 - __main__ (180) - DEBUG: Impossible de récupérer le statut depuis le serveur
+2018-11-04 10:05:09,554 - __main__ (298) - DEBUG: Statut LMS : {'volume': 0, 'playlist_display': u'', 'duration': 0, 'bitrate': u'', 'album': u'', 'current_time': '10:05', 'artist': u'', 'playlist_count': 0, 'title': u'', 'current': 0, 'playlist_position': 0, 'state': u'stop', 'position': u'', 'type': u'', 'remaining': u''}
+2018-11-04 10:05:09,554 - __main__ (303) - DEBUG: Etat du player : stop
+2018-11-04 10:05:09,554 - __main__ (381) - DEBUG: Chaîne ligne 0 : []
+2018-11-04 10:05:09,554 - __main__ (381) - DEBUG: Chaîne ligne 1 : ['04/11/2018 10:05']
+2018-11-04 10:05:09,805 - __main__ (180) - DEBUG: Impossible de récupérer le statut depuis le serveur
+2018-11-04 10:05:09,806 - __main__ (298) - DEBUG: Statut LMS : {'volume': 0, 'playlist_display': u'', 'duration': 0, 'bitrate': u'', 'album': u'', 'current_time': '10:05', 'artist': u'', 'playlist_count': 0, 'title': u'', 'current': 0, 'playlist_position': 0, 'state': u'stop', 'position': u'', 'type': u'', 'remaining': u''}
+2018-11-04 10:05:09,806 - __main__ (303) - DEBUG: Etat du player : stop
+2018-11-04 10:05:09,806 - __main__ (381) - DEBUG: Chaîne ligne 0 : []
+2018-11-04 10:05:09,807 - __main__ (381) - DEBUG: Chaîne ligne 1 : ['04/11/2018 10:05']
+2018-11-04 10:05:10,057 - __main__ (180) - DEBUG: Impossible de récupérer le statut depuis le serveur
+2018-11-04 10:05:10,058 - __main__ (298) - DEBUG: Statut LMS : {'volume': 0, 'playlist_display': u'', 'duration': 0, 'bitrate': u'', 'album': u'', 'current_time': '10:05', 'artist': u'', 'playlist_count': 0, 'title': u'', 'current': 0, 'playlist_position': 0, 'state': u'stop', 'position': u'', 'type': u'', 'remaining': u''}
+2018-11-04 10:05:10,058 - __main__ (303) - DEBUG: Etat du player : stop
+2018-11-04 10:05:10,058 - __main__ (381) - DEBUG: Chaîne ligne 0 : []
+2018-11-04 10:05:10,058 - __main__ (381) - DEBUG: Chaîne ligne 1 : ['04/11/2018 10:05']
+2018-11-04 10:05:10,309 - __main__ (180) - DEBUG: Impossible de récupérer le statut depuis le serveur
+2018-11-04 10:05:10,309 - __main__ (298) - DEBUG: Statut LMS : {'volume': 0, 'playlist_display': u'', 'duration': 0, 'bitrate': u'', 'album': u'', 'current_time': '10:05', 'artist': u'', 'playlist_count': 0, 'title': u'', 'current': 0, 'playlist_position': 0, 'state': u'stop', 'position': u'', 'type': u'', 'remaining': u''}
+2018-11-04 10:05:10,309 - __main__ (303) - DEBUG: Etat du player : stop
+2018-11-04 10:05:10,310 - __main__ (381) - DEBUG: Chaîne ligne 0 : []
+2018-11-04 10:05:10,310 - __main__ (381) - DEBUG: Chaîne ligne 1 : ['04/11/2018 10:05']
+2018-11-04 10:05:10,561 - __main__ (180) - DEBUG: Impossible de récupérer le statut depuis le serveur
+2018-11-04 10:05:10,562 - __main__ (298) - DEBUG: Statut LMS : {'volume': 0, 'playlist_display': u'', 'duration': 0, 'bitrate': u'', 'album': u'', 'current_time': '10:05', 'artist': u'', 'playlist_count': 0, 'title': u'', 'current': 0, 'playlist_position': 0, 'state': u'stop', 'position': u'', 'type': u'', 'remaining': u''}
+2018-11-04 10:05:10,562 - __main__ (303) - DEBUG: Etat du player : stop
+2018-11-04 10:05:10,562 - __main__ (381) - DEBUG: Chaîne ligne 0 : []
+2018-11-04 10:05:10,562 - __main__ (381) - DEBUG: Chaîne ligne 1 : ['04/11/2018 10:05']
+2018-11-04 10:05:10,813 - __main__ (180) - DEBUG: Impossible de récupérer le statut depuis le serveur
+2018-11-04 10:05:10,814 - __main__ (298) - DEBUG: Statut LMS : {'volume': 0, 'playlist_display': u'', 'duration': 0, 'bitrate': u'', 'album': u'', 'current_time': '10:05', 'artist': u'', 'playlist_count': 0, 'title': u'', 'current': 0, 'playlist_position': 0, 'state': u'stop', 'position': u'', 'type': u'', 'remaining': u''}
+2018-11-04 10:05:10,814 - __main__ (303) - DEBUG: Etat du player : stop
+2018-11-04 10:05:10,814 - __main__ (381) - DEBUG: Chaîne ligne 0 : []
+2018-11-04 10:05:10,815 - __main__ (381) - DEBUG: Chaîne ligne 1 : ['04/11/2018 10:05']
+2018-11-04 10:05:11,065 - __main__ (180) - DEBUG: Impossible de récupérer le statut depuis le serveur
+2018-11-04 10:05:11,066 - __main__ (298) - DEBUG: Statut LMS : {'volume': 0, 'playlist_display': u'', 'duration': 0, 'bitrate': u'', 'album': u'', 'current_time': '10:05', 'artist': u'', 'playlist_count': 0, 'title': u'', 'current': 0, 'playlist_position': 0, 'state': u'stop', 'position': u'', 'type': u'', 'remaining': u''}
+2018-11-04 10:05:11,066 - __main__ (303) - DEBUG: Etat du player : stop
+2018-11-04 10:05:11,066 - __main__ (381) - DEBUG: Chaîne ligne 0 : []
+2018-11-04 10:05:11,066 - __main__ (381) - DEBUG: Chaîne ligne 1 : ['04/11/2018 10:05']
+2018-11-04 10:05:11,317 - __main__ (180) - DEBUG: Impossible de récupérer le statut depuis le serveur
+2018-11-04 10:05:11,317 - __main__ (298) - DEBUG: Statut LMS : {'volume': 0, 'playlist_display': u'', 'duration': 0, 'bitrate': u'', 'album': u'', 'current_time': '10:05', 'artist': u'', 'playlist_count': 0, 'title': u'', 'current': 0, 'playlist_position': 0, 'state': u'stop', 'position': u'', 'type': u'', 'remaining': u''}
+2018-11-04 10:05:11,317 - __main__ (303) - DEBUG: Etat du player : stop
+2018-11-04 10:05:11,318 - __main__ (381) - DEBUG: Chaîne ligne 0 : []
+2018-11-04 10:05:11,318 - __main__ (381) - DEBUG: Chaîne ligne 1 : ['04/11/2018 10:05']
+2018-11-04 10:05:11,569 - __main__ (180) - DEBUG: Impossible de récupérer le statut depuis le serveur
+2018-11-04 10:05:11,569 - __main__ (298) - DEBUG: Statut LMS : {'volume': 0, 'playlist_display': u'', 'duration': 0, 'bitrate': u'', 'album': u'', 'current_time': '10:05', 'artist': u'', 'playlist_count': 0, 'title': u'', 'current': 0, 'playlist_position': 0, 'state': u'stop', 'position': u'', 'type': u'', 'remaining': u''}
+2018-11-04 10:05:11,569 - __main__ (303) - DEBUG: Etat du player : stop
+2018-11-04 10:05:11,569 - __main__ (381) - DEBUG: Chaîne ligne 0 : []
+2018-11-04 10:05:11,569 - __main__ (381) - DEBUG: Chaîne ligne 1 : ['04/11/2018 10:05']
+2018-11-04 10:05:11,820 - __main__ (180) - DEBUG: Impossible de récupérer le statut depuis le serveur
+2018-11-04 10:05:11,821 - __main__ (298) - DEBUG: Statut LMS : {'volume': 0, 'playlist_display': u'', 'duration': 0, 'bitrate': u'', 'album': u'', 'current_time': '10:05', 'artist': u'', 'playlist_count': 0, 'title': u'', 'current': 0, 'playlist_position': 0, 'state': u'stop', 'position': u'', 'type': u'', 'remaining': u''}
+2018-11-04 10:05:11,821 - __main__ (303) - DEBUG: Etat du player : stop
+2018-11-04 10:05:11,821 - __main__ (381) - DEBUG: Chaîne ligne 0 : []
+2018-11-04 10:05:11,821 - __main__ (381) - DEBUG: Chaîne ligne 1 : ['04/11/2018 10:05']
+2018-11-04 10:05:12,072 - __main__ (180) - DEBUG: Impossible de récupérer le statut depuis le serveur
+2018-11-04 10:05:12,073 - __main__ (298) - DEBUG: Statut LMS : {'volume': 0, 'playlist_display': u'', 'duration': 0, 'bitrate': u'', 'album': u'', 'current_time': '10:05', 'artist': u'', 'playlist_count': 0, 'title': u'', 'current': 0, 'playlist_position': 0, 'state': u'stop', 'position': u'', 'type': u'', 'remaining': u''}
+2018-11-04 10:05:12,073 - __main__ (303) - DEBUG: Etat du player : stop
+2018-11-04 10:05:12,074 - __main__ (381) - DEBUG: Chaîne ligne 0 : []
+2018-11-04 10:05:12,074 - __main__ (381) - DEBUG: Chaîne ligne 1 : ['04/11/2018 10:05']
+2018-11-04 10:05:12,325 - __main__ (180) - DEBUG: Impossible de récupérer le statut depuis le serveur
+2018-11-04 10:05:12,325 - __main__ (298) - DEBUG: Statut LMS : {'volume': 0, 'playlist_display': u'', 'duration': 0, 'bitrate': u'', 'album': u'', 'current_time': '10:05', 'artist': u'', 'playlist_count': 0, 'title': u'', 'current': 0, 'playlist_position': 0, 'state': u'stop', 'position': u'', 'type': u'', 'remaining': u''}
+2018-11-04 10:05:12,326 - __main__ (303) - DEBUG: Etat du player : stop
+2018-11-04 10:05:12,326 - __main__ (381) - DEBUG: Chaîne ligne 0 : []
+2018-11-04 10:05:12,326 - __main__ (381) - DEBUG: Chaîne ligne 1 : ['04/11/2018 10:05']
+2018-11-04 10:05:12,577 - __main__ (180) - DEBUG: Impossible de récupérer le statut depuis le serveur
+2018-11-04 10:05:12,578 - __main__ (298) - DEBUG: Statut LMS : {'volume': 0, 'playlist_display': u'', 'duration': 0, 'bitrate': u'', 'album': u'', 'current_time': '10:05', 'artist': u'', 'playlist_count': 0, 'title': u'', 'current': 0, 'playlist_position': 0, 'state': u'stop', 'position': u'', 'type': u'', 'remaining': u''}
+2018-11-04 10:05:12,578 - __main__ (303) - DEBUG: Etat du player : stop
+2018-11-04 10:05:12,578 - __main__ (381) - DEBUG: Chaîne ligne 0 : []
+2018-11-04 10:05:12,579 - __main__ (381) - DEBUG: Chaîne ligne 1 : ['04/11/2018 10:05']
+2018-11-04 10:05:12,829 - __main__ (180) - DEBUG: Impossible de récupérer le statut depuis le serveur
+2018-11-04 10:05:12,830 - __main__ (298) - DEBUG: Statut LMS : {'volume': 0, 'playlist_display': u'', 'duration': 0, 'bitrate': u'', 'album': u'', 'current_time': '10:05', 'artist': u'', 'playlist_count': 0, 'title': u'', 'current': 0, 'playlist_position': 0, 'state': u'stop', 'position': u'', 'type': u'', 'remaining': u''}
+2018-11-04 10:05:12,830 - __main__ (303) - DEBUG: Etat du player : stop
+2018-11-04 10:05:12,830 - __main__ (381) - DEBUG: Chaîne ligne 0 : []
+2018-11-04 10:05:12,830 - __main__ (381) - DEBUG: Chaîne ligne 1 : ['04/11/2018 10:05']
+2018-11-04 10:05:13,081 - __main__ (180) - DEBUG: Impossible de récupérer le statut depuis le serveur
+2018-11-04 10:05:13,081 - __main__ (298) - DEBUG: Statut LMS : {'volume': 0, 'playlist_display': u'', 'duration': 0, 'bitrate': u'', 'album': u'', 'current_time': '10:05', 'artist': u'', 'playlist_count': 0, 'title': u'', 'current': 0, 'playlist_position': 0, 'state': u'stop', 'position': u'', 'type': u'', 'remaining': u''}
+2018-11-04 10:05:13,082 - __main__ (303) - DEBUG: Etat du player : stop
+2018-11-04 10:05:13,082 - __main__ (381) - DEBUG: Chaîne ligne 0 : []
+2018-11-04 10:05:13,082 - __main__ (381) - DEBUG: Chaîne ligne 1 : ['04/11/2018 10:05']
+2018-11-04 10:05:13,333 - __main__ (180) - DEBUG: Impossible de récupérer le statut depuis le serveur
+2018-11-04 10:05:13,333 - __main__ (298) - DEBUG: Statut LMS : {'volume': 0, 'playlist_display': u'', 'duration': 0, 'bitrate': u'', 'album': u'', 'current_time': '10:05', 'artist': u'', 'playlist_count': 0, 'title': u'', 'current': 0, 'playlist_position': 0, 'state': u'stop', 'position': u'', 'type': u'', 'remaining': u''}
+2018-11-04 10:05:13,333 - __main__ (303) - DEBUG: Etat du player : stop
+2018-11-04 10:05:13,333 - __main__ (381) - DEBUG: Chaîne ligne 0 : []
+2018-11-04 10:05:13,333 - __main__ (381) - DEBUG: Chaîne ligne 1 : ['04/11/2018 10:05']
+2018-11-04 10:05:13,584 - __main__ (180) - DEBUG: Impossible de récupérer le statut depuis le serveur
+2018-11-04 10:05:13,585 - __main__ (298) - DEBUG: Statut LMS : {'volume': 0, 'playlist_display': u'', 'duration': 0, 'bitrate': u'', 'album': u'', 'current_time': '10:05', 'artist': u'', 'playlist_count': 0, 'title': u'', 'current': 0, 'playlist_position': 0, 'state': u'stop', 'position': u'', 'type': u'', 'remaining': u''}
+2018-11-04 10:05:13,585 - __main__ (303) - DEBUG: Etat du player : stop
+2018-11-04 10:05:13,586 - __main__ (381) - DEBUG: Chaîne ligne 0 : []
+2018-11-04 10:05:13,586 - __main__ (381) - DEBUG: Chaîne ligne 1 : ['04/11/2018 10:05']
+2018-11-04 10:05:13,837 - __main__ (180) - DEBUG: Impossible de récupérer le statut depuis le serveur
+2018-11-04 10:05:13,837 - __main__ (298) - DEBUG: Statut LMS : {'volume': 0, 'playlist_display': u'', 'duration': 0, 'bitrate': u'', 'album': u'', 'current_time': '10:05', 'artist': u'', 'playlist_count': 0, 'title': u'', 'current': 0, 'playlist_position': 0, 'state': u'stop', 'position': u'', 'type': u'', 'remaining': u''}
+2018-11-04 10:05:13,838 - __main__ (303) - DEBUG: Etat du player : stop
+2018-11-04 10:05:13,838 - __main__ (381) - DEBUG: Chaîne ligne 0 : []
+2018-11-04 10:05:13,838 - __main__ (381) - DEBUG: Chaîne ligne 1 : ['04/11/2018 10:05']
+2018-11-04 10:05:14,089 - __main__ (180) - DEBUG: Impossible de récupérer le statut depuis le serveur
+2018-11-04 10:05:14,090 - __main__ (298) - DEBUG: Statut LMS : {'volume': 0, 'playlist_display': u'', 'duration': 0, 'bitrate': u'', 'album': u'', 'current_time': '10:05', 'artist': u'', 'playlist_count': 0, 'title': u'', 'current': 0, 'playlist_position': 0, 'state': u'stop', 'position': u'', 'type': u'', 'remaining': u''}
+2018-11-04 10:05:14,090 - __main__ (303) - DEBUG: Etat du player : stop
+2018-11-04 10:05:14,091 - __main__ (381) - DEBUG: Chaîne ligne 0 : []
+2018-11-04 10:05:14,091 - __main__ (381) - DEBUG: Chaîne ligne 1 : ['04/11/2018 10:05']
+2018-11-04 10:05:14,342 - __main__ (180) - DEBUG: Impossible de récupérer le statut depuis le serveur
+2018-11-04 10:05:14,342 - __main__ (298) - DEBUG: Statut LMS : {'volume': 0, 'playlist_display': u'', 'duration': 0, 'bitrate': u'', 'album': u'', 'current_time': '10:05', 'artist': u'', 'playlist_count': 0, 'title': u'', 'current': 0, 'playlist_position': 0, 'state': u'stop', 'position': u'', 'type': u'', 'remaining': u''}
+2018-11-04 10:05:14,343 - __main__ (303) - DEBUG: Etat du player : stop
+2018-11-04 10:05:14,343 - __main__ (381) - DEBUG: Chaîne ligne 0 : []
+2018-11-04 10:05:14,344 - __main__ (381) - DEBUG: Chaîne ligne 1 : ['04/11/2018 10:05']
+2018-11-04 10:05:14,595 - __main__ (180) - DEBUG: Impossible de récupérer le statut depuis le serveur
+2018-11-04 10:05:14,595 - __main__ (298) - DEBUG: Statut LMS : {'volume': 0, 'playlist_display': u'', 'duration': 0, 'bitrate': u'', 'album': u'', 'current_time': '10:05', 'artist': u'', 'playlist_count': 0, 'title': u'', 'current': 0, 'playlist_position': 0, 'state': u'stop', 'position': u'', 'type': u'', 'remaining': u''}
+2018-11-04 10:05:14,596 - __main__ (303) - DEBUG: Etat du player : stop
+2018-11-04 10:05:14,596 - __main__ (381) - DEBUG: Chaîne ligne 0 : []
+2018-11-04 10:05:14,596 - __main__ (381) - DEBUG: Chaîne ligne 1 : ['04/11/2018 10:05']
+2018-11-04 10:05:14,848 - __main__ (180) - DEBUG: Impossible de récupérer le statut depuis le serveur
+2018-11-04 10:05:14,848 - __main__ (298) - DEBUG: Statut LMS : {'volume': 0, 'playlist_display': u'', 'duration': 0, 'bitrate': u'', 'album': u'', 'current_time': '10:05', 'artist': u'', 'playlist_count': 0, 'title': u'', 'current': 0, 'playlist_position': 0, 'state': u'stop', 'position': u'', 'type': u'', 'remaining': u''}
+2018-11-04 10:05:14,848 - __main__ (303) - DEBUG: Etat du player : stop
+2018-11-04 10:05:14,849 - __main__ (381) - DEBUG: Chaîne ligne 0 : []
+2018-11-04 10:05:14,849 - __main__ (381) - DEBUG: Chaîne ligne 1 : ['04/11/2018 10:05']
+2018-11-04 10:05:15,100 - __main__ (180) - DEBUG: Impossible de récupérer le statut depuis le serveur
+2018-11-04 10:05:15,100 - __main__ (298) - DEBUG: Statut LMS : {'volume': 0, 'playlist_display': u'', 'duration': 0, 'bitrate': u'', 'album': u'', 'current_time': '10:05', 'artist': u'', 'playlist_count': 0, 'title': u'', 'current': 0, 'playlist_position': 0, 'state': u'stop', 'position': u'', 'type': u'', 'remaining': u''}
+2018-11-04 10:05:15,100 - __main__ (303) - DEBUG: Etat du player : stop
+2018-11-04 10:05:15,100 - __main__ (381) - DEBUG: Chaîne ligne 0 : []
+2018-11-04 10:05:15,100 - __main__ (381) - DEBUG: Chaîne ligne 1 : ['04/11/2018 10:05']
+2018-11-04 10:05:15,351 - __main__ (180) - DEBUG: Impossible de récupérer le statut depuis le serveur
+2018-11-04 10:05:15,351 - __main__ (298) - DEBUG: Statut LMS : {'volume': 0, 'playlist_display': u'', 'duration': 0, 'bitrate': u'', 'album': u'', 'current_time': '10:05', 'artist': u'', 'playlist_count': 0, 'title': u'', 'current': 0, 'playlist_position': 0, 'state': u'stop', 'position': u'', 'type': u'', 'remaining': u''}
+2018-11-04 10:05:15,352 - __main__ (303) - DEBUG: Etat du player : stop
+2018-11-04 10:05:15,352 - __main__ (381) - DEBUG: Chaîne ligne 0 : []
+2018-11-04 10:05:15,353 - __main__ (381) - DEBUG: Chaîne ligne 1 : ['04/11/2018 10:05']
+2018-11-04 10:05:15,604 - __main__ (180) - DEBUG: Impossible de récupérer le statut depuis le serveur
+2018-11-04 10:05:15,604 - __main__ (298) - DEBUG: Statut LMS : {'volume': 0, 'playlist_display': u'', 'duration': 0, 'bitrate': u'', 'album': u'', 'current_time': '10:05', 'artist': u'', 'playlist_count': 0, 'title': u'', 'current': 0, 'playlist_position': 0, 'state': u'stop', 'position': u'', 'type': u'', 'remaining': u''}
+2018-11-04 10:05:15,604 - __main__ (303) - DEBUG: Etat du player : stop
+2018-11-04 10:05:15,605 - __main__ (381) - DEBUG: Chaîne ligne 0 : []
+2018-11-04 10:05:15,605 - __main__ (381) - DEBUG: Chaîne ligne 1 : ['04/11/2018 10:05']
+2018-11-04 10:05:15,856 - __main__ (180) - DEBUG: Impossible de récupérer le statut depuis le serveur
+2018-11-04 10:05:15,857 - __main__ (298) - DEBUG: Statut LMS : {'volume': 0, 'playlist_display': u'', 'duration': 0, 'bitrate': u'', 'album': u'', 'current_time': '10:05', 'artist': u'', 'playlist_count': 0, 'title': u'', 'current': 0, 'playlist_position': 0, 'state': u'stop', 'position': u'', 'type': u'', 'remaining': u''}
+2018-11-04 10:05:15,857 - __main__ (303) - DEBUG: Etat du player : stop
+2018-11-04 10:05:15,857 - __main__ (381) - DEBUG: Chaîne ligne 0 : []
+2018-11-04 10:05:15,858 - __main__ (381) - DEBUG: Chaîne ligne 1 : ['04/11/2018 10:05']
+2018-11-04 10:05:16,109 - __main__ (180) - DEBUG: Impossible de récupérer le statut depuis le serveur
+2018-11-04 10:05:16,109 - __main__ (298) - DEBUG: Statut LMS : {'volume': 0, 'playlist_display': u'', 'duration': 0, 'bitrate': u'', 'album': u'', 'current_time': '10:05', 'artist': u'', 'playlist_count': 0, 'title': u'', 'current': 0, 'playlist_position': 0, 'state': u'stop', 'position': u'', 'type': u'', 'remaining': u''}
+2018-11-04 10:05:16,110 - __main__ (303) - DEBUG: Etat du player : stop
+2018-11-04 10:05:16,110 - __main__ (381) - DEBUG: Chaîne ligne 0 : []
+2018-11-04 10:05:16,111 - __main__ (381) - DEBUG: Chaîne ligne 1 : ['04/11/2018 10:05']
+2018-11-04 10:05:16,361 - __main__ (180) - DEBUG: Impossible de récupérer le statut depuis le serveur
+2018-11-04 10:05:16,362 - __main__ (298) - DEBUG: Statut LMS : {'volume': 0, 'playlist_display': u'', 'duration': 0, 'bitrate': u'', 'album': u'', 'current_time': '10:05', 'artist': u'', 'playlist_count': 0, 'title': u'', 'current': 0, 'playlist_position': 0, 'state': u'stop', 'position': u'', 'type': u'', 'remaining': u''}
+2018-11-04 10:05:16,362 - __main__ (303) - DEBUG: Etat du player : stop
+2018-11-04 10:05:16,362 - __main__ (381) - DEBUG: Chaîne ligne 0 : []
+2018-11-04 10:05:16,362 - __main__ (381) - DEBUG: Chaîne ligne 1 : ['04/11/2018 10:05']
+2018-11-04 10:05:16,613 - __main__ (180) - DEBUG: Impossible de récupérer le statut depuis le serveur
+2018-11-04 10:05:16,613 - __main__ (298) - DEBUG: Statut LMS : {'volume': 0, 'playlist_display': u'', 'duration': 0, 'bitrate': u'', 'album': u'', 'current_time': '10:05', 'artist': u'', 'playlist_count': 0, 'title': u'', 'current': 0, 'playlist_position': 0, 'state': u'stop', 'position': u'', 'type': u'', 'remaining': u''}
+2018-11-04 10:05:16,614 - __main__ (303) - DEBUG: Etat du player : stop
+2018-11-04 10:05:16,614 - __main__ (381) - DEBUG: Chaîne ligne 0 : []
+2018-11-04 10:05:16,615 - __main__ (381) - DEBUG: Chaîne ligne 1 : ['04/11/2018 10:05']
+2018-11-04 10:05:16,866 - __main__ (180) - DEBUG: Impossible de récupérer le statut depuis le serveur
+2018-11-04 10:05:16,866 - __main__ (298) - DEBUG: Statut LMS : {'volume': 0, 'playlist_display': u'', 'duration': 0, 'bitrate': u'', 'album': u'', 'current_time': '10:05', 'artist': u'', 'playlist_count': 0, 'title': u'', 'current': 0, 'playlist_position': 0, 'state': u'stop', 'position': u'', 'type': u'', 'remaining': u''}
+2018-11-04 10:05:16,867 - __main__ (303) - DEBUG: Etat du player : stop
+2018-11-04 10:05:16,867 - __main__ (381) - DEBUG: Chaîne ligne 0 : []
+2018-11-04 10:05:16,867 - __main__ (381) - DEBUG: Chaîne ligne 1 : ['04/11/2018 10:05']
+2018-11-04 10:05:17,118 - __main__ (180) - DEBUG: Impossible de récupérer le statut depuis le serveur
+2018-11-04 10:05:17,118 - __main__ (298) - DEBUG: Statut LMS : {'volume': 0, 'playlist_display': u'', 'duration': 0, 'bitrate': u'', 'album': u'', 'current_time': '10:05', 'artist': u'', 'playlist_count': 0, 'title': u'', 'current': 0, 'playlist_position': 0, 'state': u'stop', 'position': u'', 'type': u'', 'remaining': u''}
+2018-11-04 10:05:17,119 - __main__ (303) - DEBUG: Etat du player : stop
+2018-11-04 10:05:17,119 - __main__ (381) - DEBUG: Chaîne ligne 0 : []
+2018-11-04 10:05:17,119 - __main__ (381) - DEBUG: Chaîne ligne 1 : ['04/11/2018 10:05']
+2018-11-04 10:05:17,370 - __main__ (180) - DEBUG: Impossible de récupérer le statut depuis le serveur
+2018-11-04 10:05:17,370 - __main__ (298) - DEBUG: Statut LMS : {'volume': 0, 'playlist_display': u'', 'duration': 0, 'bitrate': u'', 'album': u'', 'current_time': '10:05', 'artist': u'', 'playlist_count': 0, 'title': u'', 'current': 0, 'playlist_position': 0, 'state': u'stop', 'position': u'', 'type': u'', 'remaining': u''}
+2018-11-04 10:05:17,370 - __main__ (303) - DEBUG: Etat du player : stop
+2018-11-04 10:05:17,370 - __main__ (381) - DEBUG: Chaîne ligne 0 : []
+2018-11-04 10:05:17,371 - __main__ (381) - DEBUG: Chaîne ligne 1 : ['04/11/2018 10:05']
+2018-11-04 10:05:17,621 - __main__ (180) - DEBUG: Impossible de récupérer le statut depuis le serveur
+2018-11-04 10:05:17,621 - __main__ (298) - DEBUG: Statut LMS : {'volume': 0, 'playlist_display': u'', 'duration': 0, 'bitrate': u'', 'album': u'', 'current_time': '10:05', 'artist': u'', 'playlist_count': 0, 'title': u'', 'current': 0, 'playlist_position': 0, 'state': u'stop', 'position': u'', 'type': u'', 'remaining': u''}
+2018-11-04 10:05:17,621 - __main__ (303) - DEBUG: Etat du player : stop
+2018-11-04 10:05:17,621 - __main__ (381) - DEBUG: Chaîne ligne 0 : []
+2018-11-04 10:05:17,621 - __main__ (381) - DEBUG: Chaîne ligne 1 : ['04/11/2018 10:05']
+2018-11-04 10:05:17,872 - __main__ (180) - DEBUG: Impossible de récupérer le statut depuis le serveur
+2018-11-04 10:05:17,873 - __main__ (298) - DEBUG: Statut LMS : {'volume': 0, 'playlist_display': u'', 'duration': 0, 'bitrate': u'', 'album': u'', 'current_time': '10:05', 'artist': u'', 'playlist_count': 0, 'title': u'', 'current': 0, 'playlist_position': 0, 'state': u'stop', 'position': u'', 'type': u'', 'remaining': u''}
+2018-11-04 10:05:17,873 - __main__ (303) - DEBUG: Etat du player : stop
+2018-11-04 10:05:17,874 - __main__ (381) - DEBUG: Chaîne ligne 0 : []
+2018-11-04 10:05:17,874 - __main__ (381) - DEBUG: Chaîne ligne 1 : ['04/11/2018 10:05']
+2018-11-04 10:05:18,125 - __main__ (180) - DEBUG: Impossible de récupérer le statut depuis le serveur
+2018-11-04 10:05:18,125 - __main__ (298) - DEBUG: Statut LMS : {'volume': 0, 'playlist_display': u'', 'duration': 0, 'bitrate': u'', 'album': u'', 'current_time': '10:05', 'artist': u'', 'playlist_count': 0, 'title': u'', 'current': 0, 'playlist_position': 0, 'state': u'stop', 'position': u'', 'type': u'', 'remaining': u''}
+2018-11-04 10:05:18,125 - __main__ (303) - DEBUG: Etat du player : stop
+2018-11-04 10:05:18,126 - __main__ (381) - DEBUG: Chaîne ligne 0 : []
+2018-11-04 10:05:18,126 - __main__ (381) - DEBUG: Chaîne ligne 1 : ['04/11/2018 10:05']
+2018-11-04 10:05:18,318 - __main__ (694) - INFO: Fin de l'application d'affichage sur le Raspdac
