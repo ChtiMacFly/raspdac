@@ -67,7 +67,8 @@ Nécessaire pour configurer la partie audio, c'est quand même ce qu'on cherche 
 ### Onglet Tweaks
 
 * Host name : **RaspdacPlayer** (*pas obligatoire*)
-* User command #1 : **python3 /home/tc/power-mgmt.py -b** (*voir répertoire dédié sur la gestion de l'alimentation)
+* (*Attention il faut au préalable avoir suivi les instructions du dossier "Alimentation")*.
+User command #1 : **python3 /home/tc/power-mgmt.py -b**
 
 ### Installez les "locales" en français
 
