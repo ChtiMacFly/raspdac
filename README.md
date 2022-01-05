@@ -44,13 +44,22 @@ Cette étape permet de préciser la configuration Wifi dans un fichier texte ava
 Une fois installée, les version indiquées sur l'interface sont les suivantes :
 
 * piCorePlayer v8.1.0
-* piCore v10.3pCP
-* Squeezelite v1.9.6-1206-pCP
-
+* piCore v13.1
+* Squeezelite v1.9.9-1391-pCP
 
 ## Configuration
 
+### Gestion de l'alimentation
+
+Il y a plusieurs scripts disponibles mais j'ai créé mon propre script python pour une raison simple : l'utilisation d'une interruption pour détecter l'appui sur le bouton d'alimentation. Voir le fichier README dans le dossier "Alimentation".
+
+### Extention de la partition
+
+Dans l'onglet "Main Page", cliquez sur "Resize FS" pour pouvoir ajouter des extentions. Choisissez "Whole SD Card" pour utiliser l'ensemble de l'espace disponible de la carte.
+
 ### Onglet Squeezelite Settings
+
+Nécessaire pour configurer la partie audio, c'est quand même ce qu'on cherche (écouter de la zik)...
 
 * Audio output : **ESS9023 DAC**
 * Name of your player : **RaspdacPlayer** (pas obligatoire mais il est conseillé de changer de nom)
@@ -58,21 +67,24 @@ Une fois installée, les version indiquées sur l'interface sont les suivantes :
 ### Onglet Tweaks
 
 * Host name : **RaspdacPlayer** (*pas obligatoire*)
-* Auto start LMS : **randomplay tracks** (*pour lire aléatoirement des morceaux une fois LMS lancé)
 * User command #1 : **python3 /home/tc/power-mgmt.py -b** (*voir répertoire dédié sur la gestion de l'alimentation)
 
-## Utilisation de piCorePlayer
+### Installez les "locales" en français
 
-### Ajout(s) dans cmdline
+Voici les étapes à suivre pour configurer votre piCorePlayer en français :
 
-*Note : a priori toutes ces commandes ne sont plus nécessaires avec cette version de piCorePlayer v6.0.0.*
+1. Installer le paquet `getlocale` via l'interface de piCorePlayer ("extensions" dans "Main", repository piCore officiel)
+2. Installez le paquet "nano" pour pouvoir éditer le fichier `cmdline.txt` un peu plus tard.
+3. Une fois connecté en SSH, générez les caractères : `sudo getlocale.sh` puis choisissez "fr_FR.UTF-8"
+4. Monter la partition fat depuis laquelle a été monté l'OS : `mount /dev/mmcblk0p1` - Voir [ici](https://iotbytes.wordpress.com/change-picore-boot-codes-boot-options/). Allez dans le répertoire de montage (par défaut /mnt/mmcblk0p1)
+5. Ajouter à la fin du fichier cmdline.txt l'option `lang=fr_FR.UTF-8/UTF-8` (à la fin de la ligne, sans passer à la ligne)
+6. Rebootez le player.
 
-~~Voici les étapes à suivre pour configurer votre piCorePlayer en français :~~
+## Partie LMS (serveur audio)
 
-1. ~~Installer le paquet `getlocale` via l'interface de piCorePlayer ("extensions" dans "Main", repository piCore officiel)~~
-2. ~~Générer les caractères : `sudo getlocale.sh` puis choisissez "fr_FR.UTF-8"~~
-3. ~~Monter la partition fat depuis laquelle a été monté l'OS : `mount /dev/mmcblk0p1` - Voir [ici](https://iotbytes.wordpress.com/change-picore-boot-codes-boot-options/)~~
-4. ~~Ajouter à la fin du fichier cmdline.txt l'option `lang=fr_FR.UTF-8/UTF-8`~~
+### Onglet Tweaks
+
+* Auto start LMS : **randomplay tracks** (*pour lire aléatoirement des morceaux une fois LMS lancé)
 
 ### Montage disque externe
 
@@ -84,10 +96,14 @@ Une fois installée, les version indiquées sur l'interface sont les suivantes :
 2. RPi-GPIO-Python3.6.tcz (pour gestion de l'alimentation)
 3. nano.tcz (*pas obligatoire mais pratique pour éditer un fichier localement une fois connecté en ssh*)
 
-### Paramétrage du Wifi
+## Paramétrage du Bluetooth
 
-Pas de difficulté : il faut activer le wifi (j'ai aussi activé le bluetooth sans soucis) et mettre les informations de connexion sur la page dédiée. Vous pourrez ensuite vous affranchir du cordon réseau !
+Pour appairer une enceinte BT :
 
-### Utilisation de l'écran
+1. Dans "Main Page", cliquez sur le bouton "Bluetooth" puis "Install".
+2. Activer l'option `RPi built-in Bluetooth`
+3. Démarrez le BT ("Power On")
+
+## Utilisation de l'afficheur LCD
 
 Voir répertoire "Afficheur".
