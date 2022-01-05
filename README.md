@@ -6,28 +6,47 @@ Ces scripts sont conçus pour être utilisés avec le [RaspDAC Audiophonics I-Sa
 
 Voir les [différentes générations du DAC](https://www.audiophonics.fr/fr/blog-diy-audio/19-audiophonics-i-sabre-dac-les-differentes-generations-du-dac-pour-raspberry-pi.html) sur le blog AudioPhonics.
 
-## Versions utilisées
+# Installation de piCorePlayer
 
-J'i utilisé l'image de la version standard du 7 mars 2020 (pCP6.0.0 Standard Version) disponible sur [https://www.picoreplayer.org/main_downloads.shtml](https://www.picoreplayer.org/main_downloads.shtml)
+## Installation de l'image
 
-Une fois installée, les version indiquées sur l'interface sont les suivantes :
-
-* piCorePlayer v6.0.0
-* piCore v10.3pCP
-* Squeezelite v1.9.6-1206-pCP
-
-## Installation de piCorePlayer
+J'ai utilisé l'image de la version standard du 7 mars 2020 (pCP6.0.0 Standard Version) disponible sur [https://www.picoreplayer.org/main_downloads.shtml](https://www.picoreplayer.org/main_downloads.shtml)
 
 Choisir la version "standard" et pas audio si vous choisissez d'installer LMS sur la même machine, ce qui est mon cas. De toute façon, si vous n'envisagez pas d'aller jusqu'à un débit très élévé (de mémoire autour  de 350kbits/s c'est globalement inutile).
 
-Aucune difficulté ici, il suffit de suivre les instructions. Récapitulatif "à l'arrache" (remplacer par votre fichier / le périphérique de la carte SD que vous allez insérer dans le raspberry):
+Pour l'installation, il suffit de suivre les instructions (notamment [ici](https://docs.picoreplayer.org/how-to/burn_pcp_onto_a_sd_card/linux/dd/)). J'utilise la version "dd" qui a le mérite d'être native sur tous les systèmes UNIX. Récapitulatif "à l'arrache" (remplacer par votre fichier / le périphérique de la carte SD que vous allez insérer dans le raspberry):
 
-1. Récupérer l'image sur le site de [piCorePlayer](https://picoreplayer.org/)
-2. Mettez l'image sur votre carte SD (mieux vaut tout supprimer dessus avant) :   
-    ```
-    dd if=/path/to/fichier img of=/dev/sdc bs=1M
-    ```
+1. Récupérer l'image sur le site de [piCorePlayer](https://picoreplayer.org/) et dézipper là. Ce qui nous intéresse c'est le fichier .IMG
+2. Insérer votre carte SD, trouver son petit nom, démonter les partitions et copier l'image:
+    
+    2.1 ```lsblk```
+    
+    2.2 ```sudo umount </dev/sdc1>```
+        ___(remplacer `sdc1` par votre partition puis répéter l'opération pour chaque partition montée)___
+    
+    2.3 ```dd if=</path/to/fichier img> of=</dev/sdc> bs=1M```
     ___(remplacez `/dev/sdc` par votre périphérique bien sûr)___
+
+## Configuration du Wifi
+
+Cette étape permet de préciser la configuration Wifi dans un fichier texte avant d'installer la carte SD dans le raspberry.
+
+1. Vous devez avoir une partition de boot de montée sur votre PC une fois l'installation ci-dessus effectuée. Copier le fichier `wpa_supplicant.conf.sample` vers `wpa_supplicant.conf`
+2. editez le fichier et renseignez votre paramètres Wifi. Voir [https://docs.picoreplayer.org/how-to/setup_wifi_on_pcp_without_ethernet/](https://docs.picoreplayer.org/how-to/setup_wifi_on_pcp_without_ethernet/)
+
+## Démarrage
+
+1. Insérer la carte SD dans le raspberry et...Démarrez !
+2. Trouver l'adresse IP de votre raspberry via l'interface de votre BOX si vous n'avez pas branché d'écran. Sinon lisez sur l'écran de démarrage...
+
+## Versions
+
+Une fois installée, les version indiquées sur l'interface sont les suivantes :
+
+* piCorePlayer v8.1.0
+* piCore v10.3pCP
+* Squeezelite v1.9.6-1206-pCP
+
 
 ## Configuration
 
