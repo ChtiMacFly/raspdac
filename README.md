@@ -83,26 +83,40 @@ Voici les étapes à suivre pour configurer votre piCorePlayer en français :
 
 ## Partie LMS (serveur audio)
 
+### Installation
+
+Voir [https://docs.picoreplayer.org/how-to/install_lms/](https://docs.picoreplayer.org/how-to/install_lms/)
+
+Cette partie nécessite d'avoir connecté un disque externe, qui servira à la fois à l'installation de LMS mais qui contiendra également l'ensemble de vos fichies musicaux.
+
+1. Dans mon cas le disque est en XFS, il faut donc installer le support des filesystem complémentaire.
+
+2. Dans la partie "Pick from the following detected USB disks to mount", cohez la case, renseignez le point de montage de votre disque externe et cliquez sur "Set USB Mount".
+
+3. Installez les extension exFAT, elles sont indispensables dans la plupart des cas (la plupart des disques externes sont formatés en FAT)
+
+4. Assurez-vous d'être sur l'onglet "Player/Server" tout en bas de l'écran puis cliquez sur le bouton "Install LMS". Suivez les autres instructions données sur [https://docs.picoreplayer.org/how-to/install_lms/](https://docs.picoreplayer.org/how-to/install_lms/)
+
+5. Pour ma part j'ai positionné le cache ("Save LMS Server Cache and Preferences to Mounted Drive") sur le disque externe car je suis moyennement confiant dans les E/S à répétition sur une carte SD.
+
 ### Onglet Tweaks
 
 * Auto start LMS : **randomplay tracks** (*pour lire aléatoirement des morceaux une fois LMS lancé)
 
-### Montage disque externe
-
-~~Installer l'extention xfsprogs si vous souhaitez utilisez un disque XFS comme celà est mon cas.~~ (*ma partition a été reconnue sans avoir à le faire et de toute façon l'extension n'est plus disponible dans les repositories*)
-
 ### Extensions piCore que j'ai ajouté
 
-1. ~~Audiophonics-powerscripts~~ (*plus disponible apparemment dans le repositiory par défaut*)
-2. RPi-GPIO-Python3.6.tcz (pour gestion de l'alimentation)
-3. nano.tcz (*pas obligatoire mais pratique pour éditer un fichier localement une fois connecté en ssh*)
+1. python3.8-rpi-gpio.tcz (pour gestion de l'alimentation)
+
+2. nano.tcz (*pas obligatoire mais pratique pour éditer un fichier localement une fois connecté en ssh*)
 
 ## Paramétrage du Bluetooth
 
 Pour appairer une enceinte BT :
 
 1. Dans "Main Page", cliquez sur le bouton "Bluetooth" puis "Install".
+
 2. Activer l'option `RPi built-in Bluetooth`
+
 3. Démarrez le BT ("Power On")
 
 ## Utilisation de l'afficheur LCD
