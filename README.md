@@ -119,6 +119,10 @@ Pour appairer une enceinte BT :
 
 3. Démarrez le BT ("Power On")
 
+## Installation de Samba
+
+Dans l'onglet LMS, installez Samba pour pouvoir partager le contenu du disque dur externe (afin de pouvoir mettre à jour votre bibliothèque muisicale). Mettre 0775 dans "Create File Mode".
+
 ## Utilisation de l'afficheur LCD
 
 Voir répertoire "Afficheur".
