@@ -32,6 +32,6 @@ Voir la configuration sur [https://forums.slimdevices.com/showthread.php?109270-
 
 Je fournis ici une version python de gestion de l'alimentation. Pourquoi avoir réinventé l'eau chaude ? Pour les raisons ci-dessus (nécessité d'être root, d'avoir à retrouver un package perdu dans les repositories) mais surtout **d'éviter une boucle d'interrogation infinie** pour savoir si le bouton d'alimentation a été pressé. Je ne suis pas un fan non plus de créer un service / un démon pour balayer le port quand l'utilisation d'une simple interruption matérielle suffit, possibilité offerte par le port du raspberry et par Python.
 
-Python 3.6 est installé par défaut lors de l'installation de piCorePlayer. Il faut donc simplement ajouter le paquet **RPi-GPIO-python3.6.tcz** depuis le respository "piCorePlayer repository". Vous pouvez le faire depuis l'interface web, dans *User command #1* : `python3 /home/tc/power-mgmt.py -b`
+Python 3.8 est installé par défaut lors de l'installation de piCorePlayer. Il faut donc simplement ajouter le paquet **python3.8-rpi-gpio.tcz** depuis le repository "piCorePlayer repository". Puis copier ce script dans le répertoire "home" du compte "tc" (compte par défaut) : `scp power-mgmt.py tc@<adresse ip du player>:/`. Vous pouvez ensuite configurer ce script au démarrage du player depuis l'interface web, dans *User command #1* : `python3 /home/tc/power-mgmt.py -b`
 
-Vous pouvez la tester vian ssh (dans le répertoire par défaut /home/tc si vous êtes connecté en tant que "tc") : `python3 power-mgmt.py --help`
+Vous pouvez la tester via ssh (dans le répertoire par défaut /home/tc si vous êtes connecté en tant que "tc") : `python3 power-mgmt.py --help`
