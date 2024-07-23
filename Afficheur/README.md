@@ -8,10 +8,23 @@ Mais cette solution me semble un peu lourde (docker pour un script, violent quan
 1. ~~Installer le package `setuptools` via l'interface de piCorePlayer ("extensions" dans "Main")~~
     ```
     sudo pip3 install setuptools
+
+    Puis upgrade :
+
+    python3 -m pip install --upgrade pip setuptools wheel
+
+
+
     ```
 2. Le script utilise comme le module pylms, qu'il faut donc installer en pré-requis :
     ```
-    sudo pip3 install pylms
+    pip install moment
+
+    Et là paf le chien : erreur lors de la compilation (manque GCC a priori)
+
+    Ajout de GCC, de Python3-dev
+
+    pip install pylms
     ```
 7. ~~Installer le package "python-mpd" pour la gestion des serveurs sous MPD : `sudo pip install python-mpd`~~
 

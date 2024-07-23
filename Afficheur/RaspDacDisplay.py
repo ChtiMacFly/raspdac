@@ -1,3 +1,5 @@
+# Reprise de https://github.com/audiophonics/MoodAudio-RaspDAC-Script/tree/master
+
 import Winstar_GraphicOLED
 import moment
 import time
@@ -53,9 +55,9 @@ STATUSLOGFILE='/var/log/RaspDacDisplayStatus.log'
 STATUSLOGGING = False
 
 # Adjust this setting to localize the time display to your region
-TIMEZONE="US/Eastern"
+#TIMEZONE="US/Eastern"
 TIME24HOUR=False
-#TIMEZONE="Europe/Paris"
+TIMEZONE="Europe/Paris"
 
 # Logging level
 LOGLEVEL=logging.DEBUG
@@ -96,10 +98,7 @@ REDIS_SERVER = "localhost"
 REDIS_PORT = 6379
 REDIS_PASSWORD = ""
 
-
-
 class RaspDac_Display:
-
 
 	def __init__(self):
 		logging.debug("RaspDac_Display Initializing")
@@ -282,20 +281,20 @@ class RaspDac_Display:
 					audio = r_status['audio'].split(':')
 					if len(audio) == 3:
 						sample = round(float(audio[0])/1000,1)
-					 	bits = audio[1]
-					 	if audio[2] == '1':
+						bits = audio[1]
+						if audio[2] == '1':
 							channels = 'Mono'
-					 	elif audio[2] == '2':
-						 	channels = 'Stereo'
-					 	elif int(audio[2]) > 2:
-						 	channels = 'Multi'
-					 	else:
-						 	channels = u""
-
-				 	 	if channels == u"":
-						 	tracktype = "{0} bit, {1} kHz".format(bits, sample)
-					 	else:
-					 		tracktype = "{0}, {1} bit, {2} kHz".format(channels, bits, sample)
+						elif audio[2] == '2':
+							channels = 'Stereo'
+						elif int(audio[2]) > 2:
+							channels = 'Multi'
+						else:
+							channels = u""
+							
+						if channels == u"":
+							tracktype = "{0} bit, {1} kHz".format(bits, sample)
+						else:
+							tracktype = "{0}, {1} bit, {2} kHz".format(channels, bits, sample)
 					else:
 						# If audio information not available just send that MPD is the source
 						tracktype = u"MPD"
@@ -339,7 +338,7 @@ class RaspDac_Display:
 				remaining = timepos
 
 			return { 'state':u"play", 'artist':artist, 'title':title, 'album':album, 'remaining':remaining, 'current':current, 'duration':duration, 'position':timepos, 'volume':volume, 'playlist_display':playlist_display, 'playlist_position':playlist_position, 'playlist_count':playlist_count, 'bitrate':bitrate, 'type':tracktype }
-	  	else:
+		else:
 			self.timesongstarted = 0
 			return { 'state':u"stop", 'artist':u"", 'title':u"", 'album':u"", 'remaining':u"", 'current':0, 'duration':0, 'position':u"", 'volume':0, 'playlist_display':u"", 'playlist_position':u"", 'playlist_count':0, 'bitrate':u"", 'type':u""}
 
@@ -388,20 +387,20 @@ class RaspDac_Display:
 				audio = m_status['audio'].split(':')
 				if len(audio) == 3:
 					sample = round(float(audio[0])/1000,1)
-				 	bits = audio[1]
-				 	if audio[2] == '1':
+					bits = audio[1]
+					if audio[2] == '1':
 						channels = 'Mono'
-				 	elif audio[2] == '2':
-					 	channels = 'Stereo'
-				 	elif int(audio[2]) > 2:
-					 	channels = 'Multi'
-				 	else:
-					 	channels = u""
+					elif audio[2] == '2':
+						channels = 'Stereo'
+					elif int(audio[2]) > 2:
+						channels = 'Multi'
+					else:
+						channels = u""
 
-			 	 	if channels == u"":
-					 	tracktype = "{0} bit, {1} kHz".format(bits, sample)
-				 	else:
-				 		tracktype = "{0}, {1} bit, {2} kHz".format(channels, bits, sample)
+					if channels == u"":
+						tracktype = "{0} bit, {1} kHz".format(bits, sample)
+					else:
+						tracktype = "{0}, {1} bit, {2} kHz".format(channels, bits, sample)
 				else:
 					# If audio information not available just send that MPD is the source
 					tracktype = u"MPD"
@@ -440,7 +439,7 @@ class RaspDac_Display:
 
 
 			return { 'state':u"play", 'artist':artist, 'title':title, 'album':album, 'remaining':remaining, 'current':current, 'duration':duration, 'position':timepos, 'volume':volume, 'playlist_display':playlist_display, 'playlist_position':playlist_position, 'playlist_count':playlist_count, 'bitrate':self.bitrate, 'type':tracktype }
-	  	else:
+		else:
 			return { 'state':u"stop", 'artist':u"", 'title':u"", 'album':u"", 'remaining':u"", 'current':0, 'duration':0, 'position':u"", 'volume':0, 'playlist_display':u"", 'playlist_position':u"", 'playlist_count':0, 'bitrate':u"", 'type':u""}
 
 	def status_spop(self):
@@ -462,7 +461,7 @@ class RaspDac_Display:
 
 		spot_status = json.loads(spot_status_string)
 
-	  	if spot_status.get('status') == "playing":
+		if spot_status.get('status') == "playing":
 			artist = spot_status.get('artist')
 			title = spot_status.get('title')
 			album = spot_status.get('album')
@@ -505,7 +504,7 @@ class RaspDac_Display:
 			playlist_display = "{0}/{1}".format(playlist_position, playlist_count)
 
 			return { 'state':u"play", 'artist':artist, 'title':title, 'album':album, 'remaining':remaining, 'current':current, 'duration':duration, 'position':timepos, 'volume':volume, 'playlist_display':playlist_display, 'playlist_position':playlist_position, 'playlist_count':playlist_count, 'bitrate':bitrate, 'type':tracktype }
-	  	else:
+		else:
 			return { 'state':u"stop", 'artist':u"", 'title':u"", 'album':u"", 'remaining':u"", 'current':0, 'duration':0, 'position':u"", 'volume':0, 'playlist_display':u"", 'playlist_position':0, 'playlist_count':0, 'bitrate':u"", 'type':u""}
 
 
@@ -538,7 +537,7 @@ class RaspDac_Display:
 				return { 'state':u"stop", 'artist':u"", 'title':u"", 'album':u"", 'remaining':u"", 'current':0, 'duration':0, 'position':u"", 'volume':0, 'playlist_display':u"", 'playlist_position':0, 'playlist_count':0, 'bitrate':u"", 'type':u"", 'current_time':u""}
 
 
-	  	if lms_status == "play":
+		if lms_status == "play":
 			import urllib
 
 			artist = urllib.unquote(str(self.lmsplayer.request("artist ?", True))).decode('utf-8')
@@ -604,7 +603,7 @@ class RaspDac_Display:
 				remaining = timepos
 
 			return { 'state':u"play", 'artist':artist, 'title':title, 'album':album, 'remaining':remaining, 'current':current, 'duration':duration, 'position':timepos, 'volume':volume, 'playlist_display':playlist_display,'playlist_position':playlist_position, 'playlist_count':playlist_count, 'bitrate':bitrate, 'type':tracktype }
-	  	else:
+		else:
 			return { 'state':u"stop", 'artist':u"", 'title':u"", 'album':u"", 'remaining':u"", 'current':0, 'duration':0, 'position':u"", 'volume':0, 'playlist_display':u"", 'playlist_position':0, 'playlist_count':0, 'bitrate':u"", 'type':u""}
 
 
@@ -739,99 +738,99 @@ def Display(q, l, c):
   # l - number of lines in display
   # c - number of columns in display
 
-  lines = []
-  columns = []
+	lines = []
+	columns = []
 
-  lcd = Winstar_GraphicOLED.Winstar_GraphicOLED()
-  lcd.oledReset()
-  lcd.home()
-  lcd.clear()
+	lcd = Winstar_GraphicOLED.Winstar_GraphicOLED()	
+	lcd.oledReset()
+	lcd.home()
+	lcd.clear()
 
-  lcd.message(STARTUP_MSG)
-  time.sleep(2)
+	lcd.message(STARTUP_MSG)
+	time.sleep(2)
 
-  for i in range (0, l):
-	lines.append("")
+	for i in range (0, l):
+		lines.append("")
 	columns.append(0)
 
-  # Get first display update off of the queue
-  item = q.get()
-  q.task_done()
+	# Get first display update off of the queue
+	item = q.get()
+	q.task_done()
 
-  lcd.home()
-  lcd.clear()
+	lcd.home()
+	lcd.clear()
 
-  for i in range(len(item)):
-	# Convert from Unicode to UTF-8
-	#item[i] = item[i].encode("utf-8")
-	lines[i] = item[i]
-	lcd.setCursor(0,i)
-	lcd.message( lines[i][0:c] )
+	for i in range(len(item)):
+		# Convert from Unicode to UTF-8
+		#item[i] = item[i].encode("utf-8")
+		lines[i] = item[i]
+		lcd.setCursor(0,i)
+		lcd.message( lines[i][0:c] )
 
-  prev_time = time.time()
+	prev_time = time.time()
 
-  while True:
+	while True:
 	  short_lines=True
 
-	  # Smooth animation
-	  if time.time() - prev_time < ANIMATION_SMOOTHING:
-		  time.sleep(ANIMATION_SMOOTHING-(time.time()-prev_time))
-	  try:
-		  # Determine if any lines have been updated and if yes display them
-		  for i in range(len(item)):
+		# Smooth animation
+		if time.time() - prev_time < ANIMATION_SMOOTHING:
+			time.sleep(ANIMATION_SMOOTHING-(time.time()-prev_time))
+			try:
+			# Determine if any lines have been updated and if yes display them
+			for i in range(len(item)):
 
-			  # Convert from Unicode into UTF-8
-			  #item[i] = item[i].encode("utf-8")
-			  # Check if line is longer than display
-			  if len(item[i])>c:
-				  short_lines = False
+				# Convert from Unicode into UTF-8
+				#item[i] = item[i].encode("utf-8")
+				# Check if line is longer than display
+					if len(item[i])>c:
+					short_lines = False
 
-			  # Check if line has been updated
-			  if lines[i] != item[i]:
-				  # Create a line to print that is at least as long as the existing line
-				  # This is to erase any extraneous characters on the display
-				  buf = item[i].ljust(len(lines[i]))
+					# Check if line has been updated
+					if lines[i] != item[i]:
+						# Create a line to print that is at least as long as the existing line
+						# This is to erase any extraneous characters on the display
+						buf = item[i].ljust(len(lines[i]))
 
-				  # Reset cursor to beginning of changed line and then display the change
-				  lcd.setCursor(0,i)
-				  lcd.message(buf[0:c])
+						# Reset cursor to beginning of changed line and then display the change
+						lcd.setCursor(0,i)
+						lcd.message(buf[0:c])
 
-				  # Update the local line data and reset the column position for the line
-				  lines[i] = item[i]
-				  columns[i] = 0
+						# Update the local line data and reset the column position for the line
+						lines[i] = item[i]
+						columns[i] = 0
 
-		  # If lines all fit on display then we can wait for new input
-		  if short_lines:
-			  item=q.get()
-			  q.task_done()
-		  else:
-			  # Update all long lines
-			  for i in range(len(lines)):
-				  if len(lines[i])>c:
-					  buf = "%s          %s" % (lines[i], lines[i][0:DISPLAY_WIDTH-1])
-				  	  #buf = "{}		{}".format(lines[i],lines[i][0:DISPLAY_WIDTH-1])
-					  #buf = lines[i]+"		  "+lines[i][0:c]
+			# If lines all fit on display then we can wait for new input
+			if short_lines:
+				item=q.get()
+				q.task_done()
+			else:
+				# Update all long lines
+				for i in range(len(lines)):
+					if len(lines[i])>c:
+						buf = "%s          %s" % (lines[i], lines[i][0:DISPLAY_WIDTH-1])
+						#buf = "{}		{}".format(lines[i],lines[i][0:DISPLAY_WIDTH-1])
+						#buf = lines[i]+"		  "+lines[i][0:c]
 
-					  columns[i] = columns[i]+1
-					  if columns[i] > len(buf)-c:
-						  columns[i]=0
+						columns[i] = columns[i]+1
+						if columns[i] > len(buf)-c:
+							columns[i]=0
 
-					  lcd.setCursor(0,i)
+						lcd.setCursor(0,i)
 
-					  # Print the portion of the string that is currently visible
-					  lcd.message(buf[columns[i]:columns[i]+c])
-			  # Since we have to continue updating the display, check for a new update but don't block
-			  item=q.get_nowait()
-			  q.task_done()
+						# Print the portion of the string that is currently visible
+						lcd.message(buf[columns[i]:columns[i]+c])
+				# Since we have to continue updating the display, check for a new update but don't block
+				item=q.get_nowait()
+				q.task_done()
 
 
-		  prev_time = time.time()
-	  except Queue.Empty:
-		  prev_time = time.time()
-		  pass
+				prev_time = time.time()
+			except Queue.Empty:
+			prev_time = time.time()
+			pass
 
 def sigterm_handler(_signo, _stack_frame):
-        sys.exit(0)
+		sys.exit(0)
 
 if __name__ == '__main__':
 	signal.signal(signal.SIGTERM, sigterm_handler)

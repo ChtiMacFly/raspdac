@@ -8,11 +8,11 @@ Voir les [différentes générations du DAC](https://www.audiophonics.fr/fr/blog
 
 ## Versions utilisées
 
-J'i utilisé l'image de la version standard du 7 mars 2020 (pCP6.0.0 Standard Version) disponible sur [https://www.picoreplayer.org/main_downloads.shtml](https://www.picoreplayer.org/main_downloads.shtml)
+J'i utilisé l'image de la version standard du 10 juillet 2021 (pCP8.0.0 Standard Version) disponible sur [https://www.picoreplayer.org/main_downloads.shtml](https://www.picoreplayer.org/main_downloads.shtml)
 
 Une fois installée, les version indiquées sur l'interface sont les suivantes :
 
-* piCorePlayer v6.0.0
+* piCorePlayer v8.0.0
 * piCore v10.3pCP
 * Squeezelite v1.9.6-1206-pCP
 

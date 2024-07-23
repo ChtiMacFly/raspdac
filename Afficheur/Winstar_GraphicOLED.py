@@ -164,7 +164,7 @@ class Winstar_GraphicOLED:
 
             # Initialize GPIO pins
             for pin in self.pins_db:
-               GPIO.setup(pin, GPIO.OUT, initial=GPIO.LOW)
+                GPIO.setup(pin, GPIO.OUT, initial=GPIO.LOW)
 
             GPIO.setup(OLED_E, GPIO.OUT, initial=GPIO.LOW)
             GPIO.setup(OLED_RS, GPIO.OUT, initial=GPIO.LOW)
@@ -249,14 +249,12 @@ class Winstar_GraphicOLED:
             self.displaycontrol &= ~self.LCD_DISPLAYON
             self.write4bits(self.LCD_DISPLAYCONTROL | self.displaycontrol)
 
-
     def display(self):
         ''' Turn the display on (quickly) '''
 
         if DISPLAY_INSTALLED:
             self.displaycontrol |= self.LCD_DISPLAYON
             self.write4bits(self.LCD_DISPLAYCONTROL | self.displaycontrol)
-
 
     def noCursor(self):
         ''' Turns the underline cursor on/off '''
@@ -265,14 +263,12 @@ class Winstar_GraphicOLED:
             self.displaycontrol &= ~self.LCD_CURSORON
             self.write4bits(self.LCD_DISPLAYCONTROL | self.displaycontrol)
 
-
     def cursor(self):
         ''' Cursor On '''
 
         if DISPLAY_INSTALLED:
             self.displaycontrol |= self.LCD_CURSORON
             self.write4bits(self.LCD_DISPLAYCONTROL | self.displaycontrol)
-
 
     def noBlink(self):
         ''' Turn on and off the blinking cursor '''
@@ -281,28 +277,24 @@ class Winstar_GraphicOLED:
             self.displaycontrol &= ~self.LCD_BLINKON
             self.write4bits(self.LCD_DISPLAYCONTROL | self.displaycontrol)
 
-
     def DisplayLeft(self):
         ''' These commands scroll the display without changing the RAM '''
 
         if DISPLAY_INSTALLED:
             self.write4bits(self.LCD_CURSORSHIFT | self.LCD_DISPLAYMOVE | self.LCD_MOVELEFT)
 
-
     def scrollDisplayRight(self):
         ''' These commands scroll the display without changing the RAM '''
 
         if DISPLAY_INSTALLED:
-            self.write4bits(self.LCD_CURSORSHIFT | self.LCD_DISPLAYMOVE | self.LCD_MOVERIGHT);
-
+            self.write4bits(self.LCD_CURSORSHIFT | self.LCD_DISPLAYMOVE | self.LCD_MOVERIGHT)
 
     def leftToRight(self):
         ''' This is for text that flows Left to Right '''
 
         if DISPLAY_INSTALLED:
             self.displaymode |= self.LCD_ENTRYLEFT
-            self.write4bits(self.LCD_ENTRYMODESET | self.displaymode);
-
+            self.write4bits(self.LCD_ENTRYMODESET | self.displaymode)
 
     def rightToLeft(self):
         ''' This is for text that flows Right to Left '''
@@ -311,7 +303,6 @@ class Winstar_GraphicOLED:
             self.displaymode &= ~self.LCD_ENTRYLEFT
             self.write4bits(self.LCD_ENTRYMODESET | self.displaymode)
 
-
     def autoscroll(self):
         ''' This will 'right justify' text from the cursor '''
 
@@ -319,14 +310,12 @@ class Winstar_GraphicOLED:
             self.displaymode |= self.LCD_ENTRYSHIFTINCREMENT
             self.write4bits(self.LCD_ENTRYMODESET | self.displaymode)
 
-
     def noAutoscroll(self):
         ''' This will 'left justify' text from the cursor '''
 
         if DISPLAY_INSTALLED:
             self.displaymode &= ~self.LCD_ENTRYSHIFTINCREMENT
             self.write4bits(self.LCD_ENTRYMODESET | self.displaymode)
-
 
     def writeonly4bits(self, bits, char_mode=False):
 
@@ -438,49 +427,48 @@ class Winstar_GraphicOLED:
 
 if __name__ == '__main__':
 
-  try:
+    try:
 
-    print("Winstar OLED Display Test")
-    lcd = Winstar_GraphicOLED()
-    lcd.oledReset()
-    lcd.home()
-    lcd.clear()
+        print("Winstar OLED Display Test")
+        lcd = Winstar_GraphicOLED()
+        lcd.oledReset()
+        lcd.home()
+        lcd.clear()
 
-    lcd.message("Winstar OLED\nPi Powered")
-    time.sleep(4)
+        lcd.message("Winstar OLED\nPi Powered")
+        time.sleep(4)
 
-    lcd.home()
-    lcd.clear()
+        lcd.home()
+        lcd.clear()
 
-    accent_min = u"àáâãäçèéëêìíî \nïòóôöøùúûüþÿ"
-    #for char in accent_min: print char, ord(char)
-    lcd.message(accent_min)
-    time.sleep(5)
+        accent_min = u"àáâãäçèéëêìíî \nïòóôöøùúûüþÿ"
+        #for char in accent_min: print char, ord(char)
+        lcd.message(accent_min)
+        time.sleep(5)
 
-    lcd.home()
-    lcd.clear()
+        lcd.home()
+        lcd.clear()
 
-    accent_maj = u"ÀÁÂÆÇÈÉÊËÌÍÎÐ \nÑÒÓÔÕÙÚÛÜÝÞß"
-    #for char in accent_maj: print char, ord(char)
-    lcd.message(accent_maj)
+        accent_maj = u"ÀÁÂÆÇÈÉÊËÌÍÎÐ \nÑÒÓÔÕÙÚÛÜÝÞß"
+        #for char in accent_maj: print char, ord(char)
+        lcd.message(accent_maj)
 
-    time.sleep(5)
-    lcd.home()
-    lcd.clear()
+        time.sleep(5)
+        lcd.home()
+        lcd.clear()
+    except KeyboardInterrupt:
+    
+        pass
 
-
-  except KeyboardInterrupt:
-    pass
-
-  finally:
-    lcd.home()
-    lcd.clear()
-    lcd.message("Goodbye!")
-    time.sleep(2)
-    lcd.home()
-    lcd.clear()
-    if DISPLAY_INSTALLED:
-        GPIO.cleanup()
-    else:
-        curses.endwin()
-    print("Winstar OLED Display Test Complete")
+    finally:
+        lcd.home()
+        lcd.clear()
+        lcd.message("Goodbye!")
+        time.sleep(2)
+        lcd.home()
+        lcd.clear()
+        if DISPLAY_INSTALLED:
+            GPIO.cleanup()
+        else:
+            curses.endwin()
+        print("Winstar OLED Display Test Complete")
